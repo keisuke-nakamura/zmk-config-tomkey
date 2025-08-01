@@ -63,10 +63,10 @@
 
         layer_6 {
             bindings = <
-&kp LG(Q)      &kp LC(W)  &trans     &trans     &trans                      &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp LG(LS(Z))  &trans     &kp LC(C)  &trans     &trans  &trans      &trans  &trans      &trans      &trans        &trans        &trans
-&kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans      &trans  &trans      &trans      &trans        &trans        &trans
-&trans         &trans     &trans     &trans     &trans  &trans      &trans  &trans                                              &trans
+&kp LG(Q)      &kp LC(W)  &trans     &trans     &trans                               &bt BT_PRV            &bt BT_NXT             &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp LG(LS(Z))  &trans     &kp LC(C)  &trans     &trans  &trans      &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp DOLLAR    &kp PERCENT   &kp AMPERSAND
+&kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &kp TILDE     &kp PIPE
+&trans         &trans     &trans     &trans     &trans  &trans      &trans           &trans                                                                   &trans
             >;
         };
     };
