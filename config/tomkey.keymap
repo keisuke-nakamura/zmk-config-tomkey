@@ -8,10 +8,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp L         &kp U             &kp COMMA       &kp PERIOD                                       &kp F          &kp W  &kp R  &kp Y  &kp P
-&kp E      &kp I         &kp A             &kp O           &kp MINUS      &mo 6          &kp DOUBLE_QUOTES  &kp K          &kp T  &kp N  &kp S  &lt 2 H
-&kp Z      &kp X         &kp C             &kp V           &kp SEMICOLON  &kp COLON      &kp SQT            &kp G          &kp D  &kp M  &kp J  &kp B
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 4 SPACE    &lt 3 DEL      &kp ENTER          &kp BACKSPACE                       &lt 5 ESCAPE
+&kp Q      &kp L         &kp U             &kp COMMA       &kp PERIOD                                         &kp F          &kp W  &kp R  &kp Y  &kp P
+&kp E      &kp I         &kp A             &kp O           &kp LANG_ZENKAKUHANKAKU  &mo 6          &kp MINUS  &kp K          &kp T  &kp N  &kp S  &lt 2 H
+&kp Z      &kp X         &kp C             &kp V           &kp SEMICOLON            &kp COLON      &kp PLUS   &kp G          &kp D  &kp M  &kp J  &kp B
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 4 SPACE              &lt 3 DEL      &kp ENTER  &kp BACKSPACE                       &lt 5 ESCAPE
             >;
         };
 
@@ -62,10 +62,10 @@
 
         layer_6 {
             bindings = <
-&kp LBKT  &kp RBKT  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION                               &kp AT_SIGN           &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp PLUS     &kp ASTERISK
-&kp LBRC  &kp RBRC  &trans         &trans            &trans        &trans      &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp DOLLAR         &kp PERCENT  &kp AMPERSAND
-&trans    &trans    &trans         &trans            &trans        &trans      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp TILDE    &kp PIPE
-&trans    &trans    &trans         &trans            &trans        &trans      &trans           &trans                                                                       &trans
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION                               &kp AT_SIGN           &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp PLUS     &kp ASTERISK
+&kp LBRC          &kp RBRC           &kp MINUS      &trans            &trans        &trans      &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp DOLLAR         &kp PERCENT  &kp AMPERSAND
+&trans            &trans             &trans         &trans            &trans        &trans      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp TILDE    &kp PIPE
+&trans            &trans             &trans         &trans            &trans        &trans      &trans           &trans                                                                       &trans
             >;
         };
     };
