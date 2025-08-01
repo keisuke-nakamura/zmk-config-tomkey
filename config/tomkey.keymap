@@ -45,7 +45,7 @@
         NUM {
             bindings = <
 &none   &kp NUMBER_7  &kp NUMBER_8  &kp N9        &none                       &kp SLASH        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-&none   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none   &trans      &trans  &kp ASTRK        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
+&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none   &trans      &trans  &kp ASTRK        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
 &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &trans      &trans  &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
 &trans  &trans        &trans        &trans        &trans  &trans      &trans  &kp RIGHT_SHIFT                                            &trans
             >;
