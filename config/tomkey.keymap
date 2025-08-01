@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -9,10 +8,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp L         &kp U             &kp COMMA       &kp PERIOD                                          &kp F            &kp W  &kp R  &kp Y  &kp P
-&kp E      &kp I         &kp A             &kp O           &kp MINUS      &mo 6               &kp BACKSLASH    &kp K            &kp T  &kp N  &kp S  &lt 2 H
-&kp Z      &kp X         &kp C             &kp V           &kp SEMICOLON  &kp LEFT_BRACE      &kp RIGHT_BRACE  &kp G            &kp D  &kp M  &kp J  &kp B
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 4 SPACE    &kp LC(SPACE)       &kp ENTER        &lt 3 BACKSPACE                       &lt 5 ESCAPE
+&kp Q      &kp L         &kp U             &kp COMMA       &kp PERIOD                                           &kp F            &kp W  &kp R  &kp Y  &kp P
+&kp E      &kp I         &kp A             &kp O           &kp MINUS      &mo 6              &kp DOUBLE_QUOTES  &kp K            &kp T  &kp N  &kp S  &lt 2 H
+&kp Z      &kp X         &kp C             &kp V           &kp SEMICOLON  &kp COLON          &kp SQT            &kp G            &kp D  &kp M  &kp J  &kp B
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 4 SPACE    &kp LC(SPACE)      &kp ENTER          &lt 3 BACKSPACE                       &lt 5 ESCAPE
             >;
         };
 
@@ -63,10 +62,10 @@
 
         layer_6 {
             bindings = <
-&kp LG(Q)      &kp LC(W)  &trans     &trans     &trans                               &bt BT_PRV            &bt BT_NXT             &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp LG(LS(Z))  &trans     &kp LC(C)  &trans     &trans  &trans      &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp DOLLAR    &kp PERCENT   &kp AMPERSAND
-&kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &kp TILDE     &kp PIPE
-&trans         &trans     &trans     &trans     &trans  &trans      &trans           &trans                                                                   &trans
+&kp LBKT  &kp RBKT  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION                               &kp AT_SIGN           &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp PLUS     &kp ASTERISK
+&kp LBRC  &kp RBRC  &trans         &trans            &trans        &trans      &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp DOLLAR         &kp PERCENT  &kp AMPERSAND
+&trans    &trans    &trans         &trans            &trans        &trans      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp TILDE    &kp PIPE
+&trans    &trans    &trans         &trans            &trans        &trans      &trans           &trans                                                                       &trans
             >;
         };
     };
