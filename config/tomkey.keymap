@@ -44,10 +44,10 @@
 
         NUM {
             bindings = <
-&none   &kp NUMBER_7  &kp NUMBER_8  &kp N9        &none                       &kp SLASH        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none   &trans      &trans  &kp ASTRK        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-&kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &trans      &trans  &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&trans  &trans        &trans        &trans        &trans  &trans      &trans  &kp RIGHT_SHIFT                                            &trans
+&trans  &kp NUMBER_7  &kp NUMBER_8  &kp N9        &none                       &kp SLASH             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
+&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none   &trans      &trans  &kp LS(SINGLE_QUOTE)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(SEMICOLON)
+&kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &trans      &trans  &kp NUMBER_0          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(MINUS)
+&trans  &trans        &trans        &trans        &trans  &trans      &trans  &kp RIGHT_SHIFT                                                 &trans
             >;
         };
 
@@ -62,10 +62,10 @@
 
         layer_6 {
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION                               &kp AT_SIGN           &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp PLUS     &kp ASTERISK
-&kp LBRC          &kp RBRC           &kp MINUS      &trans            &trans        &trans      &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp DOLLAR         &kp PERCENT  &kp AMPERSAND
-&trans            &trans             &trans         &trans            &trans        &trans      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp TILDE    &kp PIPE
-&trans            &trans             &trans         &trans            &trans        &trans      &trans           &trans                                                                       &trans
+&trans  &trans  &trans  &trans  &trans                               &trans                &kp LS(NUMBER_1)       &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)
+&trans  &trans  &trans  &trans  &trans  &trans      &kp EXCLAMATION  &kp LS(NUMBER_5)      &kp LS(NUMBER_6)       &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)
+&trans  &trans  &trans  &trans  &trans  &trans      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL         &kp TILDE         &kp PIPE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans           &trans                                                                           &trans
             >;
         };
     };
