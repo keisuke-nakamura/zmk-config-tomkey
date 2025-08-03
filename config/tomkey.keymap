@@ -8,10 +8,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp L         &kp U             &kp COMMA       &kp PERIOD                                                  &kp F       &kp W  &kp R  &kp Y  &kp P
-&kp E      &kp I         &kp A             &kp O           &kp TAB          &lt 6 LC(SPACE)         &kp RIGHT_CONTROL  &kp K       &kp T  &kp N  &kp S  &lt 2 H
-&kp Z      &kp X         &kp C             &kp V           &lt 4 SEMICOLON  &lt 3 SINGLE_QUOTE      &kp RIGHT_SHIFT    &kp G       &kp D  &kp M  &kp J  &kp B
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp SPACE        &kp DEL                 &kp BACKSPACE      &kp RETURN                       &lt 5 ESCAPE
+&kp Q      &kp L         &kp U             &kp COMMA       &kp PERIOD                                                    &kp F       &kp W  &kp R  &kp Y  &kp P
+&kp E      &kp I         &kp A             &kp O           &kp TAB          &lt 6 LC(SPACE)         &lt 6 RIGHT_CONTROL  &kp K       &kp T  &kp N  &kp S  &lt 2 H
+&kp Z      &kp X         &kp C             &kp V           &lt 4 SEMICOLON  &lt 3 SINGLE_QUOTE      &kp RIGHT_SHIFT      &kp G       &kp D  &kp M  &kp J  &kp B
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp SPACE        &kp DEL                 &kp BACKSPACE        &kp RETURN                       &lt 5 ESCAPE
             >;
         };
 
@@ -62,10 +62,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans            &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans            &trans            &trans            &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                  &trans
+&kp EQUAL  &kp INT3             &kp LEFT_BRACKET   &trans           &trans                      &trans            &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)
+&trans     &kp INTERNATIONAL_1  &kp RIGHT_BRACKET  &kp NON_US_HASH  &trans  &trans      &trans  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)
+&trans     &trans               &trans             &trans           &trans  &trans      &trans  &trans            &trans            &trans            &trans            &trans
+&trans     &trans               &trans             &trans           &trans  &trans      &trans  &trans                                                                  &trans
             >;
         };
     };
