@@ -35,9 +35,9 @@
 
         ARROW {
             bindings = <
-&none   &none     &kp UP_ARROW    &none      &none                       &trans  &none           &kp UP_ARROW    &none            &none
-&none   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none   &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&none   &none     &trans          &none      &none   &trans      &trans  &trans  &trans          &none           &trans           &none
+&trans  &trans    &kp UP_ARROW    &trans     &trans                      &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans    &trans          &trans     &trans  &trans      &trans  &trans          &trans          &trans           &trans  &trans
 &trans  &trans    &trans          &trans     &trans  &trans      &trans  &trans                                                   &trans
             >;
         };
