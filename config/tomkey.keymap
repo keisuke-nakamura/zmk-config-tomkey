@@ -9,9 +9,9 @@
         default_layer {
             bindings = <
 &kp Q      &kp L         &kp U             &kp COMMA       &kp PERIOD                                                &kp F       &kp W  &kp R  &kp Y  &kp P
-&kp E      &kp I         &kp A             &kp O           &kp TAB          &lt 6 LC(SPACE)         &lt 6 MINUS      &kp K       &kp T  &kp N  &kp S  &lt 2 H
+&kp E      &kp I         &kp A             &kp O           &lt 5 TAB        &lt 6 LC(SPACE)         &lt 6 MINUS      &kp K       &kp T  &kp N  &kp S  &kp H
 &kp Z      &kp X         &kp C             &kp V           &lt 4 SEMICOLON  &lt 3 SINGLE_QUOTE      &kp RIGHT_SHIFT  &kp G       &kp D  &kp M  &kp J  &kp B
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp SPACE        &kp DEL                 &kp BACKSPACE    &kp RETURN                       &lt 5 ESCAPE
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp SPACE        &kp DEL                 &kp BACKSPACE    &kp RETURN                       &lt 2 ESCAPE
             >;
         };
 
