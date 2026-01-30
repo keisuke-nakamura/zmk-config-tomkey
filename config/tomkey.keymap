@@ -16,6 +16,7 @@
         };
 
         MOUSE {
+            input-processors = <&zip_xy_scaler 1 3>;
             bindings = <
 &trans  &mkp MB4  &trans  &mkp MB5  &trans                      &trans  &mkp MB4  &trans  &mkp MB5  &trans
 &trans  &mkp MB1  &trans  &mkp MB2  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
