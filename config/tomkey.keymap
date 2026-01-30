@@ -16,7 +16,6 @@
         };
 
         MOUSE {
-            input-processors = <&zip_xy_scaler 1 3>;
             bindings = <
 &trans  &mkp MB4  &trans  &mkp MB5  &trans                      &trans  &mkp MB4  &trans  &mkp MB5  &trans
 &trans  &mkp MB1  &trans  &mkp MB2  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
@@ -35,6 +34,7 @@
         };
 
         ARROW {
+            input-processors = <&zip_xy_scaler 1 3>;
             bindings = <
 &trans  &trans    &kp UP_ARROW    &trans     &trans                      &trans          &kp UP_ARROW    &trans           &trans  &trans
 &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
