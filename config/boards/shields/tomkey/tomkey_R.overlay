@@ -2,6 +2,8 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/mouse.h>
+/* ▼ 追加: INPUT_REL_X などの定数を使うために必須のヘッダー */
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 &default_transform {
     col-offset = <6>;
@@ -50,18 +52,22 @@
         };
     };
 
-    /* 既存の無効なリスナー（そのまま残します） */
+    /* 既存のリスナー（念のため残しています） */
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackball>;
     };
 
-    /* ▼▼▼ 修正箇所: スナイパーモードの設定 ▼▼▼ */
+    /* ▼▼▼ スナイパーモード設定 (修正済み) ▼▼▼ */
     zip_sniper: zip_sniper {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <0>;
-        type = <INPUT_EV_REL>;  /* ★ここを追加しました */
+        
+        /* ★修正: 以下の type と codes が必須でした */
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_X INPUT_REL_Y>; 
+        
         numerator = <1>;
         denominator = <3>;
         tracker = <&trackball>;
@@ -77,7 +83,7 @@
         y-input-code = <INPUT_REL_Y>;
         bindings = <&zip_sniper>;
     };
-    /* ▲▲▲ 追加ここまで ▲▲▲ */
+    /* ▲▲▲ ここまで ▲▲▲ */
 };
 
 &trackball {
