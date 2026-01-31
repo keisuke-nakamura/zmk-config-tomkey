@@ -6,25 +6,17 @@ manifest:
       url-base: https://github.com/badjeff
     - name: te9no
       url-base: https://github.com/te9no
-    - name: kaichi
-      url-base: https://github.com/kaichi34
 
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main  # v0.3 から main に変更（重要）
+      revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff
-      revision: main  # zmk-0.3 から main に変更
+      revision: main
     - name: zmk-dongle-display
       remote: te9no
-      revision: main
-    - name: zmk-input-behavior-listener
-      remote: badjeff
-      revision: main
-    - name: zmk-kaichi  # 復活
-      remote: kaichi
       revision: main
 
   self:
