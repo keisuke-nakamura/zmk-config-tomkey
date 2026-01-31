@@ -10,8 +10,6 @@ manifest:
       url-base: https://github.com/englmaxi
     - name: te9no
       url-base: https://github.com/te9no
-    - name: kaichi
-      url-base: https://github.com/kaichi34
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -25,9 +23,6 @@ manifest:
       revision: main
     - name: zmk-input-behavior-listener
       remote: badjeff
-      revision: main
-    - name: zmk-kaichi
-      remote: kaichi
       revision: main
   self:
     path: config
