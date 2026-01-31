@@ -21,7 +21,7 @@ manifest:
     - name: zmk-dongle-display
       remote: te9no
       revision: main
-      - name: zmk-input-behavior-listener
+    - name: zmk-input-behavior-listener
       remote: badjeff
       revision: main
     - name: zmk-kaichi
