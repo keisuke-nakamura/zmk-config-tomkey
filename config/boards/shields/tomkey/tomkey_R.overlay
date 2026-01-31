@@ -1,19 +1,21 @@
 #include "tomkey.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+/* ▼ 追加: 必要なヘッダー */
+#include <dt-bindings/zmk/mouse.h>
 
 &default_transform {
     col-offset = <6>;
 };
 
 &kscan0 {
-        col-gpios
-            = <&xiao_d 10 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 9 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 8 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 7 GPIO_ACTIVE_HIGH>
-            , <&gpio0 10 GPIO_ACTIVE_HIGH>
-            ;
+    col-gpios
+        = <&xiao_d 10 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 9 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 8 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 7 GPIO_ACTIVE_HIGH>
+        , <&gpio0 10 GPIO_ACTIVE_HIGH>
+        ;
 };
 
 &spi0 {
@@ -45,16 +47,40 @@
         };
     };
 
+    /* 既存の無効なリスナー（そのまま残します） */
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
-        status = "disabled"
+        status = "disabled";
         device = <&trackball>;
     };
+
+    /* ▼▼▼ 追加: スナイパーモードの設定 ▼▼▼ */
+    /* 速度を 1/3 にする設定 */
+    zip_sniper: zip_sniper {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <0>;
+        numerator = <1>;
+        denominator = <3>;
+        tracker = <&trackball>;
+    };
+
+    /* レイヤー3の時だけ上記を有効にする新しいリスナー */
+    snipe_listener: snipe_listener {
+        compatible = "zmk,input-behavior-listener";
+        device = <&trackball>;
+        layers = <3>;
+        
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
+        bindings = <&zip_sniper>;
+    };
+    /* ▲▲▲ 追加ここまで ▲▲▲ */
 };
 
 &trackball {
     status = "okay";
-	  irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     evt-type = <INPUT_EV_REL>;
     x-input-code = <INPUT_REL_X>;
     y-input-code = <INPUT_REL_Y>;
