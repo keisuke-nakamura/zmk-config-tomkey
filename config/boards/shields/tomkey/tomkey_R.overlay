@@ -33,7 +33,6 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         cpi = <1600>;
-        
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -44,14 +43,13 @@
     split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
-
         trackball_split: trackball_split@0 {
             compatible = "zmk,input-split";
             reg = <0>;
         };
     };
 
-    /* 1. 速度調整用スケーラー (引数2つ: 分子 分母) */
+    /* 標準のスケーラー定義 (ZMK標準仕様準拠) */
     zip_xy_scaler: zip_xy_scaler {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
@@ -59,20 +57,19 @@
         codes = <INPUT_REL_X INPUT_REL_Y>;
     };
 
-    /* 2. トラックボールリスナー (zmk-kaichiで拡張される部分) */
+    /* 標準のリスナー設定 */
     trackball_listener {
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball>;
         
-        /* デフォルト速度 (等倍) */
+        /* 1. 基本設定 (等倍) */
         input-processors = <&zip_xy_scaler 1 1>;
 
-        /* スナイパーモード (レイヤー3の時 1/3) */
-        /* kaichiモジュールがあれば、このブロックが機能し始めます */
-        snipe_layer {
+        /* 2. レイヤー別の上書き設定 (ここが最新仕様の書き方です) */
+        snipe_mode {
             layers = <3>;
-            input-processors = <&zip_xy_scaler 1 3>;
+            input-processors = <&zip_xy_scaler 1 3>; /* 1/3倍速 */
         };
     };
 };
