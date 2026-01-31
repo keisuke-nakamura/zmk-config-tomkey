@@ -62,10 +62,10 @@
 
         layer_6 {
             bindings = <
-&kp EQUAL  &kp INTERNATIONAL_3      &kp LEFT_BRACKET   &trans           &trans                      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &trans
-&trans     &kp LS(INTERNATIONAL_1)  &kp RIGHT_BRACKET  &kp NON_US_HASH  &trans  &trans      &trans  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)
-&trans     &trans                   &trans             &trans           &trans  &trans      &trans  &trans            &trans            &trans            &trans            &trans
-&trans     &trans                   &trans             &trans           &trans  &trans      &trans  &trans                                                                  &trans
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)         &kp LS(NUMBER_3)   &kp LS(NUMBER_4)  &kp LS(N5)                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)
+&trans            &kp LS(INTERNATIONAL_1)  &kp RIGHT_BRACKET  &kp NON_US_HASH   &trans      &trans      &trans  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)
+&trans            &trans                   &trans             &trans            &trans      &trans      &trans  &trans            &trans            &trans            &trans            &trans
+&trans            &trans                   &trans             &trans            &trans      &trans      &trans  &trans                                                                  &trans
             >;
         };
     };
