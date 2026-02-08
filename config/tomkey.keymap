@@ -62,10 +62,10 @@
 
         layer_6 {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)
-&trans            &kp MINUS         &kp CARET         &trans            &trans      &trans      &trans  &trans            &kp LEFT_BRACKET  &kp SEMICOLON     &kp COLON         &kp RIGHT_BRACKET
-&trans            &trans            &trans            &trans            &trans      &trans      &trans  &trans            &kp COMMA         &kp PERIOD        &kp SLASH         &kp NON_US_BACKSLASH
-&trans            &trans            &trans            &trans            &trans      &trans      &trans  &trans                                                                  &trans
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)   &kp LS(NUMBER_0)
+&trans            &kp MINUS         &kp CARET         &trans            &trans      &trans      &trans  &kp LEFT_BRACKET  &kp SEMICOLON     &kp COLON         &kp RIGHT_BRACKET  &trans
+&trans            &trans            &trans            &trans            &trans      &trans      &trans  &kp AT_SIGN       &kp SLASH         &kp BACKSLASH     &kp CARET          &trans
+&trans            &trans            &trans            &trans            &trans      &trans      &trans  &trans                                                                   &trans
             >;
         };
     };
